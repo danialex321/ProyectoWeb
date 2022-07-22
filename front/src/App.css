@@ -1,0 +1,53 @@
+
+
+.btn-add-vistas {
+  color: white;
+  background-color: #61dafb;
+}
+.btn-add-viendo {
+  color: black;
+  background-color: #61dafb;
+}
+.btn-add-por-ver {
+  color: red;
+  background-color: #61dafb;
+}
+.btn-add:hover {
+  color: white;
+  background-color: #21232b;
+  box-shadow: 0 0 3px #21232b;
+}
+.btn-primary{
+  /*padding-left: 10px;
+  margin-left: 10px;*/
+  margin: 10px 10px 10px 0px;
+}
+
+
+
+.list-group-mine .list-group-item {
+  background-color: #5acce8;
+  border-top: 1px solid #0091b5;
+  border-left-color: #fff;
+  border-right-color: #fff;
+}
+
+
+
+.bi-trash3:hover {
+  color: #808080;
+}
+
+
+.bi-trash3{
+  color: #a0a0a0;
+  cursor: pointer;
+}
+
+.logoutNow{
+  cursor: pointer;
+}
+
+.errMsg {
+  color:red
+}
