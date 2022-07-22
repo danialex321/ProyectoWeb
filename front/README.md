@@ -1,6 +1,10 @@
-# Simple React TODO List
+# Simple to-watch-movies
 
-# Make sure you execute: npm i 
+# Make sure you execute: 
+*EN EL BACK*
+cd back
+node app.js
 
-
-npm run deploy
+*EN EL FRONT*
+npm i
+npm start
