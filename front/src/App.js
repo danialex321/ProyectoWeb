@@ -20,8 +20,10 @@ function App() {
       <Route element={<RequireAuth />}>
         <Route path="/" exact element={<Home />}></Route>
       </Route>
-      <Route path="/all" element={<All />}   />
-      <Route path="/add" element={<Add />}   />
+      <Route element={<RequireAuth />}>
+        <Route path="/all" element={<All />}   /></Route>
+      <Route element={<RequireAuth />}>
+        <Route path="/add" element={<Add />}   /></Route>
       {/* public routes  */}
       <Route path="/Login" element={<Login />}></Route>
       <Route path="/Register" element={<Register />}></Route>

@@ -1,0 +1,14 @@
+.jumbotron{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    background-color: red;
+    text-align: center;
+}
+.btn{
+    margin: 100px 100px 10px 0px;
+  }
+
+.form-group{
+    justify-content: center;
+}

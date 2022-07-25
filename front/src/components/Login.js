@@ -67,7 +67,7 @@ function Login() {
                 setEmail(e.target.value);
               }}
             />
-            <label htmlFor="floatingInput">Email address</label>
+            <label htmlFor="floatingInput">Enter you email</label>
           </div>
           <div className="form-floating">
             <input
@@ -78,7 +78,7 @@ function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <label htmlFor="floatingPassword">Password</label>
+            <label htmlFor="floatingPassword">Enter your password</label>
           </div>
 
           <button

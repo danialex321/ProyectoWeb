@@ -1,3 +1,5 @@
+/*Add watched movie*/
+
 import React,{useState} from 'react'
 import NavBar from "./NavBar";
 import axios from 'axios'
@@ -51,16 +53,16 @@ function Add() {
     <div className="App"><NavBar />
     <div className="container">
     <div className="jumbotron">
-      <h1>Star Wars Express</h1>
-      <h3>The greatest resource in the galaxy for Star Wars statistics!</h3>
+      <h1>Watched movies</h1>
+      <h3>This is the list of the movies I have already watched!</h3>
       <hr />
       <a href="/">
         <button className="btn btn-danger btn-lg">
-          <span className="fa fa-eye"></span> Search Characters</button>
+          <span className="fa fa-eye"></span> Search movies</button>
       </a>
       <a href="/all">
         <button className="btn btn-danger btn-lg">
-          <span className="fa fa-th-list"></span> All Characters</button>
+          <span className="fa fa-th-list"></span> Show all watched movies</button>
       </a>
     </div>
     <div className="row">
@@ -69,7 +71,7 @@ function Add() {
 
         <div className="card">
           <div className="card-header">
-            Add Characters
+            Add watched movie
           </div>
           <div className="card-body">
             <form role="form">
@@ -80,17 +82,17 @@ function Add() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="role">Role</label>
+                <label htmlFor="role">Director</label>
                 <input type="text" className="form-control" id="role" value={role} onChange={roleChangeHandler} />
               </div>
 
               <div className="form-group">
-                <label htmlFor="age">Age</label>
+                <label htmlFor="age">Year</label>
                 <input type="text" className="form-control" id="age" value = {age} onChange={ageChangeHandler} />
               </div>
 
               <div className="form-group">
-                <label htmlFor="force-points">Force Points</label>
+                <label htmlFor="force-points">Rating</label>
                 <input type="text" className="form-control" id="force-points" value={fp} onChange={fpChangeHandler} />
               </div>
 
@@ -98,7 +100,7 @@ function Add() {
             <br/>
             <div className="text-right">
               <button  className="btn btn-primary btn-md" id="add-btn" onClick={addCharacter}>
-                <span className="fa fa-fire"></span> Add to the Force</button>
+                <span className="fa fa-fire"></span> Add to the list</button>
             </div>
           </div>
         </div>

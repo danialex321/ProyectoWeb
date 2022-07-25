@@ -1,3 +1,5 @@
+/*Search watched movie*/
+
 import React, { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import axios from "axios";
@@ -21,12 +23,12 @@ function Home() {
 
     <div className="container">
       <div className="jumbotron">
-        <h1>Star Wars Version 2</h1>
-        <h3>The greatest resource in the galaxy for Star Wars statistics!</h3>
+        <h1>Watched movies</h1>
+        <h3>This is the list of the movies I have already watched!</h3>
         <hr />
-        <a href="/add"><button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span> Add New Character</button></a>
+        <a href="/add"><button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span> Add movie</button></a>
         
-        <a href="/all"><button class="btn btn-danger btn-lg"><span class="fa fa-th-list"></span> All Characters</button></a>
+        <a href="/all"><button class="btn btn-danger btn-lg"><span class="fa fa-th-list"></span> Show all watched movies</button></a>
       
       </div>
       <div className="row">
@@ -34,7 +36,7 @@ function Home() {
           <div className="card mb-4">
             <div className="card-header">
               <h3>
-                <strong>Character Search</strong>
+                <strong>Search movies</strong>
               </h3>
             </div>
             <div className="card-body">
@@ -52,8 +54,7 @@ function Home() {
                   id="search-btn"
                   onClick={searchCharacter}
                 >
-                  <span className="fa fa-search"></span> Search Your Feelings.
-                  You know it to be true.
+                  <span className="fa fa-search"></span> Search movie because my memory doesn't serve me right.
                 </button>
               </div>
             </div>
@@ -62,7 +63,7 @@ function Home() {
           <div className="card">
             <div className="card-header">
               <h3>
-                <strong>Character Statistics</strong>
+                <strong>Movie specs</strong>
               </h3>
             </div>
             <div className="card-body">
@@ -72,18 +73,18 @@ function Home() {
                 <h2 id="name">{data.name}</h2>
                 <div id="stats">
                   <h3>
-                    <strong>Role:</strong> <span id="role">{data.role}</span>
+                    <strong>Director:</strong> <span id="role">{data.role}</span>
                   </h3>
                   <h3>
-                    <strong>Age:</strong> <span id="age">{data.age}</span>
+                    <strong>Year:</strong> <span id="age">{data.age}</span>
                   </h3>
                   <h3>
-                    <strong>Force Points:</strong>{" "}
+                    <strong>Rating:</strong>{" "}
                     <span id="force-points">{data.forcePoints}</span>
                   </h3>
                 </div>
               </div>
-              ) : (<h2 id="name">Character not found</h2>)
+              ) : (<h2 id="name">Movie not found</h2>)
                
 
               }

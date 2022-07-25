@@ -1,3 +1,5 @@
+/*View Character database*/
+
 import React, { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import axios from "axios";
@@ -20,17 +22,17 @@ function All() {
     <div className="App"><NavBar />
     <div className="container">
       <div className="jumbotron">
-        <h1>Star Wars Express</h1>
-        <h3>The greatest resource in the galaxy for Star Wars statistics!</h3>
+        <h1>Watched movies</h1>
+        <h3>This is the list of the movies I have already watched!</h3>
         <hr />
         <a href="/">
           <button className="btn btn-danger btn-lg">
-            <span className="fa fa-eye"></span> Search Characters
+            <span className="fa fa-eye"></span> Search movie
           </button>
         </a>
         <a href="/add">
           <button className="btn btn-danger btn-lg">
-            <span className="fa fa-plus"></span> Add New Character
+            <span className="fa fa-plus"></span> Add movie
           </button>
         </a>
       </div>
@@ -47,9 +49,9 @@ function All() {
                 return (
                   <li className="list-group-item" key={info.name}>
                     <h2>Name: {info.name}</h2>
-                    <h3>Role: {info.role}</h3>
-                    <h3>Age: {info.age}</h3>
-                    <h3>Force Points: {info.forcePoints}</h3>
+                    <h3>Director: {info.role}</h3>
+                    <h3>Year: {info.age}</h3>
+                    <h3>Rating: {info.forcePoints}</h3>
                     <hr />
                   </li>
                 );

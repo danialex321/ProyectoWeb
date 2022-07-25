@@ -28,18 +28,27 @@
   border-top-right-radius: 0;
 }
 
-
+.btn {
+  background-color: purple;
+}
+a.btn btn-lg btn-primary:hover{
+  background-color: yellow;
+}
 #nav {
   color: red;
 }
 
 a.nav_link:link {
-  text-decoration: none;
+  text-decoration: none
 }
 
 a.nav_link:hover {
   cursor: pointer;
-  color: rgb(41, 51, 231);
+  color: rgb(208, 130, 239);
+}
+a.nav_link{
+  color: rgb(122, 17, 164);
+  font-weight: 500;
 }
 /*
 a.nav_link:visited {

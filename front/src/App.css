@@ -4,14 +4,6 @@
   color: white;
   background-color: #61dafb;
 }
-.btn-add-viendo {
-  color: black;
-  background-color: #61dafb;
-}
-.btn-add-por-ver {
-  color: red;
-  background-color: #61dafb;
-}
 .btn-add:hover {
   color: white;
   background-color: #21232b;
@@ -23,7 +15,9 @@
   margin: 10px 10px 10px 0px;
 }
 
-
+.btn-danger btn-lg{
+  margin: 10px 10px 10px 0px;
+}
 
 .list-group-mine .list-group-item {
   background-color: #5acce8;
