@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import axios from "axios";
+import "../components/Home.css";
 function Home() {
   
   const [character, setCharacter] = useState("");
@@ -23,20 +24,19 @@ function Home() {
 
     <div className="container">
       <div className="jumbotron">
-        <h1>Watched movies</h1>
-        <h3>This is the list of the movies I have already watched!</h3>
-        <hr />
+        <h1>My movies</h1>
+      </div>
+      <div className="extraBtn">
         <a href="/add"><button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span> Add movie</button></a>
         
         <a href="/all"><button class="btn btn-danger btn-lg"><span class="fa fa-th-list"></span> Show all watched movies</button></a>
-      
       </div>
       <div className="row">
         <div className="col-12">
           <div className="card mb-4">
             <div className="card-header">
               <h3>
-                <strong>Search movies</strong>
+                <strong>Search movies:</strong>
               </h3>
             </div>
             <div className="card-body">
@@ -63,7 +63,7 @@ function Home() {
           <div className="card">
             <div className="card-header">
               <h3>
-                <strong>Movie specs</strong>
+                <strong>Movie specs:</strong>
               </h3>
             </div>
             <div className="card-body">

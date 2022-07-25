@@ -30,9 +30,6 @@ const Logout = () =>{
               <a className="nav-link active" aria-current="page" href="/">
                 Home
               </a>
-              <a className="nav-link active" aria-current="page" href="/">
-                Discover
-              </a>
             </li>
           </ul>
         </div>

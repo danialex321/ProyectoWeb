@@ -29,10 +29,7 @@
 }
 
 .btn {
-  background-color: purple;
-}
-a.btn btn-lg btn-primary:hover{
-  background-color: yellow;
+  background-color: rgb(123, 50, 123);
 }
 #nav {
   color: red;

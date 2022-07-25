@@ -1,17 +1,11 @@
 
 
-.btn-add-vistas {
-  color: white;
-  background-color: #61dafb;
-}
 .btn-add:hover {
   color: white;
   background-color: #21232b;
   box-shadow: 0 0 3px #21232b;
 }
 .btn-primary{
-  /*padding-left: 10px;
-  margin-left: 10px;*/
   margin: 10px 10px 10px 0px;
 }
 

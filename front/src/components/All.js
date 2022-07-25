@@ -23,7 +23,7 @@ function All() {
     <div className="container">
       <div className="jumbotron">
         <h1>Watched movies</h1>
-        <h3>This is the list of the movies I have already watched!</h3>
+        <h3>This is the list of the movies you have already watched!</h3>
         <hr />
         <a href="/">
           <button className="btn btn-danger btn-lg">
