@@ -1,14 +1,3 @@
-
-
-.btn-add:hover {
-  color: white;
-  background-color: #21232b;
-  box-shadow: 0 0 3px #21232b;
-}
-.btn-primary{
-  margin: 10px 10px 10px 0px;
-}
-
 .btn-danger btn-lg{
   margin: 10px 10px 10px 0px;
 }
@@ -20,12 +9,9 @@
   border-right-color: #fff;
 }
 
-
-
 .bi-trash3:hover {
   color: #808080;
 }
-
 
 .bi-trash3{
   color: #a0a0a0;

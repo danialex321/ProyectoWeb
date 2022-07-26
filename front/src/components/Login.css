@@ -1,15 +1,13 @@
 .login-body {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
   background-color: #ffffff;
   text-align: center;
-  
 }
 
 .form-signin {
   max-width: 330px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .form-signin .form-floating:focus-within {
@@ -30,6 +28,7 @@
 
 .btn {
   background-color: rgb(123, 50, 123);
+  padding-bottom: 10px;
 }
 #nav {
   color: red;
@@ -61,3 +60,5 @@ a.nav_link:active {
   margin-right: 0.4rem;
   color: gray;
 }
+
+

@@ -3,6 +3,7 @@
 import React,{useState} from 'react'
 import NavBar from "./NavBar";
 import axios from 'axios'
+import "../components/Add.css";
 
 function Add() {
 
@@ -54,7 +55,7 @@ function Add() {
     <div className="container">
     <div className="jumbotron">
       <h1>Watched movies</h1>
-      <h3>This is the list of the movies I have already watched!</h3>
+      <h3>Add another movie!</h3>
       <hr />
       <a href="/">
         <button className="btn btn-danger btn-lg">

@@ -70,8 +70,10 @@ function Home() {
               {
               data!= false ?  (
                 <div>
-                <h2 id="name">{data.name}</h2>
                 <div id="stats">
+                  <h3>
+                    <strong>Name:</strong> <span id="name">{data.name}</span>
+                  </h3>
                   <h3>
                     <strong>Director:</strong> <span id="role">{data.role}</span>
                   </h3>

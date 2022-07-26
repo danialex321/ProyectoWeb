@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "../components/Login.css";
-import logo from "../img/bootstrap-logo.svg";
+import logo from "../img/bootstrap-movielogo.jpg";
 import { NavLink, Link, useNavigate, useLocation } from "react-router-dom";
 import AuthContext from "../store/auth-context";
 import axios from "axios";
@@ -53,8 +53,8 @@ function Login() {
     <div className="login-body">
       <main className="form-signin w-50">
         <form>
-          <img className="mb-4" src={logo} alt="" width="72" height="57" />
-          <h1 className="h3 mb-3 fw-normal">Please sign in -</h1>
+          <img className="mb-4" src={logo} alt="" width="140" height="140" />
+          <h1 className="h3 mb-3 fw-normal">Want to keep track of your watched movies?</h1>
 
           <div className="form-floating">
             <input
@@ -97,7 +97,7 @@ function Login() {
           {errors? (<h4 className="errMsg">{errMessage}</h4>) : (<p></p>)
 
           }
-          <p className="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+          <p className="mt-5 mb-3 text-muted">&copy; 2022 by Team #3</p>
         </form>
       </main>
     </div>

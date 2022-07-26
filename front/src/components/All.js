@@ -40,7 +40,7 @@ function All() {
         <div className="col-12">
           <div className="card">
             <div className="card-header">
-              <strong>Character Database</strong>
+              <strong>History of movies</strong>
             </div>
             <div className="card-body">
               <ul id="character-section" className="list-group"></ul>
