@@ -10,6 +10,7 @@ import AuthContext from "./store/auth-context";
 import RequireAuth from "./components/RequireAuth";
 import All from './components/All';
 import Add from './components/Add';
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
 function App() {
   const authCtx = useContext(AuthContext);

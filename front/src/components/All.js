@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import axios from "axios";
+import "../components/All.css";
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
 function All() {
   useEffect(() => {
@@ -43,19 +45,28 @@ function All() {
               <strong>History of movies</strong>
             </div>
             <div className="card-body">
-              <ul id="character-section" className="list-group"></ul>
+              <div class="mt-5">
+                <div class="d-style btn btn-brc-tp border-2 bgc-white btn-outline-blue btn-h-outline-blue btn-a-outline-blue w-100 my-2 py-3 shadow-sm">
+                  <ul id="character-section" className="list-group"></ul>
 
-              {data.map((info) => {
-                return (
-                  <li className="list-group-item" key={info.name}>
-                    <h2>Name: {info.name}</h2>
-                    <h3>Director: {info.role}</h3>
-                    <h3>Year: {info.age}</h3>
-                    <h3>Rating: {info.forcePoints}</h3>
-                    <hr />
-                  </li>
-                );
-              })}
+                  {data.map((info) => {
+                    return (
+                      <li className="list-group-item" key={info.name}>
+                        <div class="row align-items-center">
+                          <div class="col-12 col-md-4">
+                            <h4 class="pt-3 text-170 text-600 text-primary-d1 letter-spacing"></h4>
+                             <h4>Name: {info.name}</h4>
+                             </div>
+                             </div>
+                        <h3>Director: {info.role}</h3>
+                        <h3>Year: {info.age}</h3>
+                        <h3>Rating: {info.forcePoints}</h3>
+                        <hr />
+                      </li>
+                    );
+                  })}
+                  </div>
+                  </div>
             </div>
           </div>
         </div>
