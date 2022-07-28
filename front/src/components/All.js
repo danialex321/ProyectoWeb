@@ -52,16 +52,20 @@ function All() {
                   {data.map((info) => {
                     return (
                       <li className="list-group-item" key={info.name}>
-                        <div class="row align-items-center">
-                          <div class="col-12 col-md-4">
-                            <h4 class="pt-3 text-170 text-600 text-primary-d1 letter-spacing"></h4>
-                             <h4>Name: {info.name}</h4>
-                             </div>
-                             </div>
-                        <h3>Director: {info.role}</h3>
-                        <h3>Year: {info.age}</h3>
-                        <h3>Rating: {info.forcePoints}</h3>
-                        <hr />
+                        <div className= "container-card">
+                          <div class="text-primary col-md-14">
+                            <h4 class="pt-2 text-170 text-600 text-primary-d1 letter-spacing">{info.name} ({info.age})</h4>
+                          </div>
+
+                          <div class="text-secondary col-md-14">
+                            <h4 class="pt-2 text-170 text-600 text-primary-d1 letter-spacing"> Director: {info.role}</h4>
+                          </div>
+
+                        <div class="text-secondary text-120">
+                          <span class="ml-n15 align-text-bottom"></span><span class="text-180">Rating: {info.forcePoints}</span>
+                        </div>
+                        
+                        </div>
                       </li>
                     );
                   })}

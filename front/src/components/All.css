@@ -1,3 +1,5 @@
+@import "compass"
+
 .card-body{
     
 }
@@ -5,7 +7,20 @@
 .list-group-item{
 }
 
-#character-section{
-    background-color: aqua;
-    border-radius: 50%;
+.text-primary{
+    background-color:rgb(207, 234, 238);
+    color: white;
+    text-align: center;
+    
+}
+.text-secondary {
+    color: #5f718b;
+    font-weight: 700;
+}
+.container-card{
+    text-align:left;
+}
+
+@mixing random-bgr(){
+    background: rgb(random(255),random(255),random(255));
 }
